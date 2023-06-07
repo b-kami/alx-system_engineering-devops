@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | awk '{ORS=(NR>2 && NF)?", ":"\n"; if($0!="." && $0!="..") { if(substr($0, length($0)) == "/") print $0; else print $0"/" }}'
+ls -ap | awk '{print $0","}' | tr -d '\n'
