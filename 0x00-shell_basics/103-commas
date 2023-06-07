@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "./, ../, "; ls -ap | awk -F/ '{if (NR > 2) {printf "%s%s, ", ($0 == "./" || $0 == "../") ? $0 : "./"$0, ($0 ~ /\/$/) ? "" : ""}} END {printf "\n"}'
+ls -ap1 | awk '{printf "%s, ", $0} END {print ""}'
