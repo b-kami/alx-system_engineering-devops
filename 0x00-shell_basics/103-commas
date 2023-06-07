@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | awk '{printf "%s, ", $0} END {print ""}'
+ls -xamp
