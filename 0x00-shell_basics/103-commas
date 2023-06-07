@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | grep -v '/\.\{1,2\}$' | sort -d -k1.1 | tr '\n' ',' | sed 's/,$/\n/'
+ls  | grep -v '/\.\{1,2\}$' | sort -d -k1.1 | tr '\n' ',' | sed 's/,$/\n/'
