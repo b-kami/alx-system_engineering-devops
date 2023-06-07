@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | awk '{print $0","}' | tr -d '\n'
+ls -ap | awk -F/ '{if (NF != 1) {print $0", "} else {print $0}}' | tr -d '\n'
