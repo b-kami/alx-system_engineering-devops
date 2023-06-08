@@ -1,4 +1,2 @@
 #!/bin/bash
-[200~if [ "$(stat -c %U hello)" = "guillaume" ]; then
-chown betty hello
-fi
+find / -user guillaume -name hello -exec chown betty {} \;
