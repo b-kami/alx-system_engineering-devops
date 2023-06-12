@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "Holberton School" > \\\*\\\\"'\"Holberton School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
+filename='\\\*\\\\\'\"Holberton School\"\\\\\'\\\\\*\$\\\\\\?\\\\\*\\\\\*\\\\\*\\\\\*\\\\\*\\\\\:\)'
+echo "Holberton School" > "$filename"
+echo "File created: $filename"
