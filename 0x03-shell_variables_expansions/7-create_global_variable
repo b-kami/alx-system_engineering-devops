@@ -1,2 +1,2 @@
 #!/bin/bash
-globals()["BEST"] = "School"
+export SCHOOL="best"
